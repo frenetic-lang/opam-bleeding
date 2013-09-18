@@ -1,2 +1,2 @@
-archive: "git@github.com:frenetic-lang/packet.git"
+git: "https://github.com/frenetic-lang/ocaml-packet.git"
 

@@ -1,2 +1,2 @@
-archive: "git@github.com:frenetic-lang/ox.git"
+git: "https://github.com/frenetic-lang/ox.git"
 
