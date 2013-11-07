@@ -8,4 +8,4 @@ build: [
 remove: [
   ["ocamlfind" "remove" "netcore"]
 ]
-depends: ["ocamlfind" "lwt" "cstruct" "packet" "openflow" "ounit" "topology"]
+depends: ["ocamlfind" "lwt" "cstruct" "packet" "openflow" "ounit" "topology" "dprle"]

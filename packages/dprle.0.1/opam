@@ -1,11 +1,11 @@
 opam-version: "1"
-maintainer: "arjun@cs.umass.edu"
+maintainer: "seliopou@cs.brown.edu"
 build: [
   ["ocaml" "setup.ml" "-configure" "--prefix" prefix]
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
 remove: [
-  ["ocamlfind" "remove" "topology"]
+  ["ocamlfind" "remove" "dprle"]
 ]
-depends: ["ocamlfind" "packet"]
+depends: ["ocamlfind"]
