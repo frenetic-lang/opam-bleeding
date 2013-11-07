@@ -8,4 +8,4 @@ build: [
 remove: [
   ["ocamlfind" "remove" "topology"]
 ]
-depends: ["ocamlfind" "packet"]
+depends: ["ocamlfind" "packet" "openflow"]
