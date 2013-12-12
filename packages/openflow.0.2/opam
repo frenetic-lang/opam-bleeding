@@ -8,4 +8,5 @@ build: [
 remove: [
   ["ocamlfind" "remove" "openflow"]
 ]
-depends: ["ocamlfind" "lwt" "cstruct" "packet"]
+depends: ["ocamlfind" "cstruct" "packet"]
+depopts: ["lwt"]
