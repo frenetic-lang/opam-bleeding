@@ -1,7 +1,7 @@
 opam-version: "1"
 maintainer: "arjun@cs.umass.edu"
 build: [
-  ["ocaml" "setup.ml" "-configure"]
+  ["ocaml" "setup.ml" "-configure" "--prefix" prefix "--%{lwt:enable}%-lwt"]
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
