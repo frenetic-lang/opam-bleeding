@@ -13,6 +13,7 @@ depends: [
   "cstruct"
   "packet"
   "textutils"
+  "topology"
   "sexplib"
 ]
 depopts: [ "async" "quickcheck" ]
