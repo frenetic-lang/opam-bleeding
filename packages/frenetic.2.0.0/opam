@@ -10,10 +10,10 @@ remove: [
 ]
 depends: [
   "ocamlfind"
-  "cstruct"
-  "packet"
-  "openflow"
+  "cstruct"     {>= "1.0.1"}
+  "packet"      {>= "0.2.1"}
+  "openflow"    {>= "0.3.0"}
   "ounit"
-  "topology"
+  "topology"    {>= "0.1.0"}
 ]
 depopts: [ "async" "quickcheck" ]
