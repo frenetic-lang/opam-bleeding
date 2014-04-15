@@ -10,6 +10,7 @@ remove: [
 ]
 depends: [
   "ocamlfind"
+  "cmdliner"
   "core"
   "fieldslib"
   "openflow"    {>= "0.3.0"}
