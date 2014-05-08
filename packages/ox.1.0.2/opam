@@ -8,4 +8,9 @@ build: [
 remove: [
   ["ocamlfind" "remove" "ox"]
 ]
-depends: ["ocamlfind" "lwt" "cstruct" "packet" "openflow"]
+depends: ["ocamlfind"
+          "lwt"
+          "cstruct"
+          "packet"
+          "openflow" {< "0.3.0"}
+          ]
