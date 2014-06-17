@@ -20,6 +20,6 @@ depends: [
   "topology"    {>= "0.1.0"}
 ]
 depopts: [
-  ("async" & "topology" {>= "0.1.0"} & "cstruct" {>= "1.0.1"} & "packet" {>= "0.2.1"})
+  ("async" & "topology" {>= "0.1.0"} & "cstruct" {>= "1.0.1"} & "packet" {>= "0.3.0"})
   "quickcheck"
 ]
