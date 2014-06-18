@@ -12,12 +12,12 @@ depends: [
   "ocamlfind"
   "core"
   "fieldslib"
-  "openflow"    {>= "0.3.0"}
+  "openflow"    {>= "0.3.0" & < "0.4.0"}
   "ounit"
   "sexplib"
   "topology"    {>= "0.1.0"}
 ]
 depopts: [
-  ("async" & "topology" {>= "0.1.0"} & "cstruct" {>= "1.0.1"} & "packet" {>= "0.2.1"})
+  ("async" & "topology" {>= "0.1.0"} & "cstruct" {>= "1.0.1"} & "packet" {>= "0.2.1" & < "0.3.0"})
   "quickcheck"
 ]
