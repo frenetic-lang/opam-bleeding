@@ -1,13 +1,16 @@
 opam-version: "1"
 ocaml-version: [ >= "4.01.0" ]
-maintainer: "seliopou@gmail.com"
-homepage: "https://github.com/frenetic-lang/ocaml-openflow"
+version: "0.7.0"
+name: "openflow"
+maintainer: "Spiros Eliopoulos <seliopou@gmail.com>"
 build: [
   ["ocaml" "setup.ml" "-configure" "--%{async:enable}%-async" "--%{quickcheck:enable}%-quickcheck" ]
   ["ocaml" "setup.ml" "-build"]
   ["ocaml" "setup.ml" "-install"]
 ]
-remove: [["ocamlfind" "remove" "openflow"]]
+remove: [
+  ["ocamlfind" "remove" "openflow"]
+]
 depends: [
   "ocamlfind"
   "core"
@@ -16,4 +19,6 @@ depends: [
   "sexplib"
 ]
 depopts: [ "async" "quickcheck" ]
-conflicts: [ "async_extra" {<= "111.25.00"} ]
+conflicts: [
+  "async_extra" { != "111.28.00" }
+]
